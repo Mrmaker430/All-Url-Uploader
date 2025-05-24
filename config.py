@@ -30,12 +30,12 @@ class Config(object):
     CHUNK_SIZE = int(os.environ.get("CHUNK_SIZE", 128))
     # Proxy for accessing youtube-dl in GeoRestricted Areas
     # Get your own proxy from https://github.com/rg3/youtube-dl/issues/1091#issuecomment-230163061
-    HTTP_PROXY = os.environ.get("HTTP_PROXY", "")
+    HTTP_PROXY = os.environ.get("HTTP_PROXY", "157.15.93.14:8080")
 
     # Set timeout for subprocess
     PROCESS_MAX_TIMEOUT = 3700
 
     OWNER_ID = os.environ.get("OWNER_ID")
     ADL_BOT_RQ = {}
-    AUTH_USERS = list({int(x) for x in os.environ.get("AUTH_USERS", "0").split()})
+    AUTH_USERS = list({int(x) for x in os.environ.get("AUTH_USERS", "1773034985").split()})
     AUTH_USERS.append(OWNER_ID)
